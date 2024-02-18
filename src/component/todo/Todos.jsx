@@ -107,7 +107,7 @@ localStorage.setItem("todos",JSON.stringify(newtodo))
   return (
     <div>
 
-    <div className='bg-gradient-to-r from-green-300 to-red-400 w-[70vw] max-  p-1'>
+    <div className='bg-gradient-to-r from-green-300 to-red-400 w-[70vw] max-w-[800px]  p-1'>
       <Inputtd addTodo={addTodo}/>
         {
           tdlist.map((todo)=>{
@@ -119,10 +119,10 @@ localStorage.setItem("todos",JSON.stringify(newtodo))
         
     
     </div>
-    <button onClick={doneAll} className=" bg-green-400 p-3 m-4 border-2 border-black rounded-md">
+    <button onClick={doneAll} className=" bg-green-400 text-sm p-3 m-4 border-2 border-green-600 rounded-md">
   Mark All As Done
 </button>
-<button onClick={deleteAll} className="bg-red-400 p-3 m-4 border-2 border-black rounded-md">
+<button onClick={deleteAll} className="bg-red-400 text-sm p-3 m-4 border-2 border-red-700 rounded-md">
   Delete All
 </button>
         </div>

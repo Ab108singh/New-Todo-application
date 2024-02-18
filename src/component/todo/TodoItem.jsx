@@ -6,12 +6,12 @@ const TodoItem = ({ todo, setPending, setDone, setDelete, setUpdate }) => {
   return (
     <div
       className={
-        "text-3xl flex flex-row justify-between items-center px-4 py-3 mx-4 my-5 cursor-pointer rounded-[5px] " +
-        (todo.status == "pending" ? "bg-red-500" : "bg-green-400") +
+        "text-3xl flex flex-row justify-between items-center px-4 py-3 mx-4 my-5 cursor-pointer rounded-[5px]  " +
+        (todo.status == "pending" ? "bg-red-500 text-green-950" : "bg-green-400 text-red-950") +
         " "
       }
     >
-      <div className="text-3xl  flex flex-row gap-2 items-center   text-[25px]">
+      <div className="text-xl  flex flex-row gap-2 items-center ">
         <input
           className="size-[19px] "
           type="checkbox"
