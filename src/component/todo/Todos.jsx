@@ -107,7 +107,7 @@ localStorage.setItem("todos",JSON.stringify(newtodo))
   return (
     <div>
 
-    <div className='bg-gradient-to-r from-green-300 to-red-400 w-[70vw] max-w-[800px]  p-1'>
+    <div className='bg-gradient-to-r from-green-300 to-red-400 w-[90vw] max-w-[800px]  p-1'>
       <Inputtd addTodo={addTodo}/>
         {
           tdlist.map((todo)=>{
